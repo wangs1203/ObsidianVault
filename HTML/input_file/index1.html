@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>移动端用input:file调用手机相册、摄像头、和sd卡的相册文档
+  </title>
+</head>
+
+<body>
+  <div>
+    <label>照相机1</label>
+    <input type="file" id='image' accept="image/*" multiple="multiple">
+    <br>
+    <label>摄像机2</label>
+    <input type="file" id='video' accept="video/*" capture='camcorder'>
+  </div>
+  <a href="https://www.lilnong.top/static/html/test-upload-input-file-accept-capture.html">测试相机调起</a>
+
+  <script>
+    // var file = document.querySelector('#image');
+    // if (getIos()) {
+    //     file.removeAttribute("capture");
+    // }
+    // function getIos() {
+    //     if (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+
+  </script>
+</body>
+
+</html>

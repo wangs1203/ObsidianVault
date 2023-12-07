@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no"
+  />
+  <title>input输入框</title>
+
+</head>
+
+<body>
+  <input id="input">
+  <button onClick="divClick()">按钮</button>
+  <script>
+    document.addEventListener("mousedown", function(e) {
+      if (e.target.id !== "input") {
+        e.preventDefault()
+      }
+      console.log(e)
+    }, false);
+
+    document.querySelector('input').addEventListener('blur',function docblur(params) {
+      console.log('失去焦点');
+    });
+    function divClick() {
+      console.log("点击了button")
+    }
+  </script>
+</body>
+
+</html>

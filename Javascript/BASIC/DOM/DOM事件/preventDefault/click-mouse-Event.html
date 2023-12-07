@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mouse->click-Event</title>
+</head>
+
+<body>
+  <div
+    onmousedown="mDown(this)"
+    onmouseup="mUp(this)"
+    onclick="clickhandler(this)"
+    style="background-color:#D94A38;width:200px;height:50px;padding-top:25px;text-align:center;"
+  >
+    点击这里
+  </div>
+
+  <script>
+    function mDown(obj) {
+      console.log('mDown')
+      // obj.style.backgroundColor = "#1ec5e5";
+      // obj.innerHTML = "松开鼠标"
+    }
+
+    function mUp(obj) {
+      console.log('mUp')
+      // obj.style.backgroundColor = "#D94A38";
+      // obj.innerHTML = "谢谢你"
+    }
+
+    function clickhandler(tgt) {
+      console.log('clickhandler')
+    }
+  </script>
+</body>
+
+</html>
