@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BFC</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .bfc-wrapper {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background: #000;
+        color: yellowgreen;
+        word-break: break-word;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bfc-wrapper">
+      BFCBFCBFCBFCBFCBFCBFCBFC BFCBFCBFCBFCBFCBFCBFCBFCBFCBFCBFCBFCBFCBFCBFCBFC
+    </div>
+    <div style="height: 200px; background: #aaa">
+      <div style="width: 30px; height: 30px; background: red"></div>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+    </div>
+
+    <div>
+      问题：为什么 div
+      的左上角被覆盖了，而文本却没有被覆盖，float不是应该跟普通流不在一个层级吗？是因为float属性不生效吗？
+    </div>
+
+    <div>因为float当初设计的时候就是为了使文本围绕在浮动对象的周围。</div>
+  </body>
+</html>

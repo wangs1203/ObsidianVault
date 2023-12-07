@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BroadcastChannel Page 1</title>
+  </head>
+  <body>
+    <h3>Page 1</h3>
+    <h3>main screen</h3>
+    <section style="margin-top: 50px; text-align: center">
+      <input id="input" placeholder="输入测试消息" />
+      <input type="button" value="发送消息" id="sendBtn" />
+      <section id="message-container">
+        <p>收到的消息：</p>
+      </section>
+    </section>
+    <script src="./index.js"></script>
+    <script>
+      sendBtn.addEventListener("click", function () {
+        const message = input.value;
+        postMessage({ message, from: "page1", mode: "main screen" });
+      });
+    </script>
+  </body>
+</html>

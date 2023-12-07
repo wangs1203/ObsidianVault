@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>添加伪元素( ::before、::after )</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .div0 {
+      width: 200px;
+      height: 150px;
+      border: 1px solid #000;
+      text-align: center;
+    }
+
+    .div0::before {
+      content: '';
+      width: 0;
+      height: 100%;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      background: #f00;
+    }
+
+    .redbox {
+      width: 30px;
+      height: 30px;
+      background: #c00;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* .greenbox {
+      width: 30px;
+      height: 60px;
+      background: #0c0;
+      display: inline-block;
+      vertical-align: middle;
+    } */
+
+    .greenbox {
+      width: 30px;
+      height: 100%;
+      background: #0c0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .bluebox {
+      width: 30px;
+      height: 40px;
+      background: #00f;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div0">
+    <div class="bluebox">
+      <p></p>
+    </div><!-- <div class="greenbox">
+      <p></p>
+    </div> --><div class="redbox">
+      <p></p>
+    </div>
+  </div>
+</body>
+
+</html>

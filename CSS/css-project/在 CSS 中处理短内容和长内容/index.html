@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>在 CSS 中处理短内容和长内容</title>
+    <style>
+      body {
+        background-color: rgb(238, 238, 238);
+      }
+      div {
+        width: 125px;
+        padding: 5px;
+        background-color: #fff;
+      }
+      .card-without {
+        /* test */
+      }
+      .card-overflow {
+        overflow-wrap: break-word;
+      }
+
+      .card-truncation {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card-line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      ul p {
+        width: 55px;
+        border: 1px solid black;
+      }
+      ul p.none {
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+      ul p.manual {
+        -webkit-hyphens: manual;
+        -ms-hyphens: manual;
+        hyphens: manual;
+      }
+      ul p.auto {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Handling Short And Long Content In CSS</h1>
+    <h2>The overflow-wrap property guides the browser into setting a break in case a word can’t fit its container.</h2>
+    <h2>Overflow-wrap属性引导浏览器在一个词无法适应其容器的情况下设置一个中断。</h2>
+    <h3>Without overflow-wrap</h3>
+    <div class="card-without">
+      This is a test to see how the overflow wrap works in Css.This longWordCantfit.
+    </div>
+    <h3>With overflow-wrap</h3>
+    <div class="card-overflow">
+      This is a test to see how the overflow wrap works in Css.This longWordCantfit.
+    </div>
+
+    <h3>Text Truncation</h3>
+    <div class="card-truncation">This is a cool test for Css truncation</div>
+
+    <h3>Multiple Line Text Truncation 多行文本截断</h3>
+    <div class="card-line-clamp">
+      This is a cool test for multiline truncation in CSS.it's a useful
+    </div>
+
+    <p>这种技术的缺点是如果你想padding为元素添加它很容易失败。添加填充时，这将导致显示下一行的一部分，该部分应该被截断。</p>
+    <img src="https://ishadeed.com/assets/short-long-css/line-clamp-padding.png" width="600">
+
+    <h3>Hyphens</h3>
+    <ul>
+      <li>
+        <code>none</code>: no hyphen; overflow if needed
+        <p lang="en" class="none">An extreme&shy;ly long English word</p>
+      </li>
+      <li>
+        <code>manual</code>: hyphen only at &amp;hyphen; or &amp;shy; (if needed)
+        <p lang="en" class="manual">An extreme&shy;ly long English word</p>
+      </li>
+      <li>
+        <code>auto</code>: hyphen where the algo is deciding (if needed)
+        <p lang="en" class="auto">An extremely long English word</p>
+      </li>
+    </ul>
+
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SharedWorker Page 1</title>
+  </head>
+  <body>
+    <h3>Page 1</h3>
+    <h3>main screen</h3>
+    <section style="margin-top: 50px; text-align: center">
+      <input id="input" placeholder="输入测试消息" />
+      <input type="button" value="发送消息" id="sendBtn" />
+      <section id="message-container">
+        <p>收到的消息：</p>
+      </section>
+    </section>
+    <script>
+      let messageContainer = document.getElementById("message-container");
+      let input = document.getElementById("input");
+      let sendBtn = document.getElementById("sendBtn");
+      if (!window.SharedWorker) {
+        console.warn("浏览器不支持SharedWorker!");
+      } else {
+        const myWorker = new SharedWorker("./worker.js");
+
+        myWorker.port.onmessage = function (e) {
+          const msgEl = document.createElement("p");
+          const data = e.data;
+          msgEl.innerText = `Date: ${data.date} From: ${data.from} Mode: ${data.mode} Message: ${data.message}`;
+          messageContainer.appendChild(msgEl);
+        };
+
+        sendBtn.addEventListener("click", function () {
+          const message = input.value;
+
+          myWorker.port.postMessage({
+            date: new Date().toLocaleString(),
+            message,
+            mode: 'main screen',
+            from: "page 1",
+          });
+        });
+
+        myWorker.port.start();
+      }
+    </script>
+  </body>
+</html>

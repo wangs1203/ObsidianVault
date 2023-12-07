@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>绝对定位</title>
+  <style>
+    .use-absolute {
+      position: relative;
+      width: 200px;
+      height: 150px;
+      border: 1px solid #000;
+    }
+
+    .use-absolute div {
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: #f60;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="use-absolute">
+    <div></div>
+  </div>
+</body>
+
+</html>

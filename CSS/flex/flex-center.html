@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="view" name="decorator">
+    <title>flex文垂直水平居中</title>
+</head>
+<style>
+    .aaa{
+        display: flex;
+    }
+
+    .bbb{
+        width: 200px;
+        border: 1px solid #888;
+        margin-right: 20px;
+    }
+
+    .ccc{
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 100px;
+        background: #ccc;
+        border-bottom: 1px solid #888;
+    }
+    .ddd{
+        width: 100%;
+        height: calc(100% - 100px);
+        text-align: center;
+        display: table;
+        background: #eee;
+        padding: 10px 0 10px 0;
+    }
+    .eee{
+        display: table-cell;
+        vertical-align: middle;
+    }
+</style>
+
+<body>
+<div class="aaa">
+    <div class="bbb">
+        <div class="ccc">这是内容</div>
+        <div class="ddd">
+            <div class="eee">这是文字</div>
+        </div>
+    </div>
+    <div class="bbb">
+        <div class="ccc">这是内容</div>
+        <div class="ddd">
+            <div class="eee">这是文字</div>
+        </div>
+    </div>
+    <div class="bbb">
+        <div class="ccc">这是内容</div>
+        <div class="ddd">
+            <div class="eee">这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字</div>
+        </div>
+    </div>
+    <div class="bbb">
+        <div class="ccc">这是内容</div>
+        <div class="ddd">
+            <div class="eee">这是文字</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

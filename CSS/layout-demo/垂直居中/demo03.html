@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>calc 动态计算</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .div0 {
+      width: 200px;
+      height: 150px;
+      border: 1px solid #000;
+    }
+
+    .redbox {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background: #c00;
+      float: left;
+      top: calc(50% - 15px);
+      /* margin-left: calc(50% - 45px); */
+    }
+
+    .greenbox {
+      position: relative;
+      width: 30px;
+      height: 80px;
+      background: #0c0;
+      float: left;
+      top: calc(50% - 40px);
+    }
+
+    .bluebox {
+      position: relative;
+      width: 30px;
+      height: 40px;
+      background: #00f;
+      float: left;
+      top: calc(50% - 20px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div0">
+    <div class="redbox"></div>
+    <div class="greenbox"></div>
+    <div class="bluebox"></div>
+  </div>
+</body>
+
+</html>

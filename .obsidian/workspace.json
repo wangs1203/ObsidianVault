@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "c19a2859a1d6199d",
+    "type": "split",
+    "children": [
+      {
+        "id": "1619a20bb9c16b20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d5912d4e04f7d9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "每日一题/React/为什么useState要使用数组而不是对象？.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6de84c16e4a3a6d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f53e3c222921fa8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2f4c9bde6c86cb41",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7cbd3beeebae815b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "75adaf8fe2d88960",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2965f868831af345",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e3354c2eef47885",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8474ec9e9d0aec15",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "每日一题/React/为什么useState要使用数组而不是对象？.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a0f96ad148d455d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "每日一题/React/为什么useState要使用数组而不是对象？.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4d1b4f8772554953",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "45f87a82544dde98",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "每日一题/React/为什么useState要使用数组而不是对象？.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "2f4c9bde6c86cb41",
+  "lastOpenFiles": [
+    "每日一题/JS数据结构-算法/JavaScript浅拷贝-深拷贝.md",
+    "每日一题/JS数据结构-算法/数组去重.md",
+    "每日一题/JS数据结构-算法/如何将Object的key，value置换?.md",
+    "每日一题/JS数据结构-算法/深拷贝.md",
+    "每日一题/JS数据结构-算法/如何将一个javascript对象转变成一个键-值数组.md",
+    "兼容性问题/README.md",
+    "BetterScroll源码阅读顺便学习TypeScript-云社区-华为云.md",
+    "一文搞懂jsBridge的运行机制-云社区-华为云.md",
+    "冬天到了，给你的网站下个雪吧-云社区-华为云.md",
+    "登录重构小记-云社区-华为云.md",
+    "flex大法：一网打尽所有常见布局-云社区-华为云.md",
+    "css3 - 如何使用Grid中的repeat函数 - chuck - SegmentFault 思否.md",
+    "microsoft-inshellisense  IDE style command line auto complete.md",
+    "Tutorials.md",
+    "Quick Save Content.md",
+    "---Date- -YYYY-MM-DD-HH-mm---- - WorldBrain-Memex  Browser extension to curate, annotate, and discuss the most valuable content and ideas on the web. As individuals, teams and communities..md",
+    "React/未命名.md",
+    "---Date- -YYYY-MM-DD-HH-mm---- - Quick Save Content.md",
+    "---Date- -YYYYMMDDHHmm----- Quick Save Content.md",
+    "---Date- -YYYYMMDDHHmm----- BetterScroll源码阅读顺便学习TypeScript（下）-云社区-华为云.md",
+    "BetterScroll源码阅读顺便学习TypeScript（下）-云社区-华为云 - ---Date- -YYYYMMDDHHmm----.md",
+    "未命名.md",
+    "未命名.canvas",
+    "React",
+    "未命名 1.canvas"
+  ]
+}

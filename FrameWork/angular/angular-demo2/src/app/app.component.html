@@ -1,0 +1,54 @@
+<div>
+  <!-- 同时添加多个class -->
+  <h1 [ngClass]="classList">ngClass</h1>
+  <!-- 只需一个class -->
+  <p [class.test]="isTest" [ngClass]="classList">添加或移除一个类</p>
+
+  <!-- 绑定多个style -->
+  <h2 [style]="styleList">绑定style ngStyle</h2>
+  <h2 [ngStyle]="styleList">绑定style ngStyle</h2>
+
+
+  <!-- 绑定一个style -->
+  <div [style.font-size]="fontsize">绑定一个style</div>
+  <div [style.height]="fontsize">绑定一个style</div>
+
+  <!-- ngIf -->
+  <h1 *ngIf="isShow">ngIf</h1>
+
+  <!-- ngFor -->
+  <div>
+    <!-- 偶数行变色 灰色 gray -->
+    <p
+      *ngFor="
+        let color of colors;
+        let i = index;
+        let odd = odd;
+      "
+      [style.color]='color'
+      [style.background]="!odd && 'gray'"
+    >
+      {{ color }} {{ i }} {{ odd ? '奇' : '偶'}}
+    </p>
+
+    <!-- ngFor 添加trackBy 优化渲染性能 -->
+    <p *ngFor="
+      let item of colorArr;
+      trackBy: trackById
+      "
+    >
+      {{item.name}}
+    </p>
+
+    <button (click)="fetchColors()">重新获取数据</button>
+
+    <!-- Array<基本类型> 渲染性能没有问题 -->
+    <ul>
+      <li *ngFor="let color of colors">
+        {{color}}
+      </li>
+    </ul>
+
+    <button (click)="fetchColorList()">重新获取数据</button>
+  </div>
+</div>
